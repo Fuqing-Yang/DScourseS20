@@ -1,0 +1,50 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{PS4}
+\author{Fuqing Yang}
+\date{February 2020}
+
+\usepackage{natbib}
+\usepackage{graphicx}
+
+\begin{document}
+\begin{enumerate}
+
+\maketitle
+
+    \item \textbf{Data sources}
+		  \begin{description}
+	            \item[]	Stock data
+	            \item[] housing price
+          \end{description}
+
+    \item \textbf{Answer 5}
+		  \begin{description}
+	            \item[]	5.d 
+                  	 \begin{itemize} 
+	                       \item   class(mydf): "list".
+	                       \item   class(mydf\$players):"data.frame".
+                     \end{itemize}      
+          \end{description}
+          
+    \item \textbf{Answer 6}
+		  \begin{description}
+	            \item[]	6.4 \\
+                  	 
+                 class(df1): "data.frame".\\
+                 class(df):"SparkDataFrame".
+                     
+                     
+	            \item[] 6.5.d \\
+                  	 Error in (function (classes, fdef, mtable)  :  unable to find an inherited method for function ‘select’ for signature ‘"data.frame", "Column"\\
+	                   The reason might be that SparkR can not read datafranme 'df1'
+                   
+                     
+	            \item[] 6.6.b \\
+	                Error in (function (classes, fdef, mtable)  :  unable to find an inherited method for function ‘filter’ for signature ‘"data.frame", "Column"\\
+                  	The reason might be that SparkR can not read datafranme 'df1'
+          \end{description}
+\end{enumerate}
+
+\end{document}
