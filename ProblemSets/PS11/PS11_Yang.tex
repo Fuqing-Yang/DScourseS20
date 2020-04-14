@@ -1,0 +1,44 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{THE PREDICTION OF BIKE SHARING USAGE AND PASSENGERS’ BEHAVIOR}
+\author{Fuqing Yang}
+\date{April 2020}
+
+
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{natbib}
+
+\begin{document}
+
+\maketitle
+
+\doublespace
+
+    \section{Introduction}
+    Over the recent years, the sharing economy has changed the market across the whole economy. The growth of the internet and mobile-based technology and applications have turned the economy dramatically.  The rapidly rise of sharing economy has turned the underused assets into competitors. Rely on the modern internet technology could lead the new sharing economy system to threaten the incumbents across the economy. Especially, for the riding service, the effect of the riding sharing system on the traditional taxi business are apparent, the competition between for-hired vehicle, which ride-sharing service that allows passengers to request a vehicle through a mobile-based technology, and taxi are studied by lots of research. Taxi services provide on demand service for consumers for any location at any time during the day, but for hired vehicle such as Uber and Lyft have the efficient passengers and drivers marching technology which allow drivers maximize their capacity utilization rate, and reducing the waiting cost for passengers. Therefore, the threat of the riding-sharing system may lead the taxi business to respond the competition, and the passengers might be better off. \\
+    For my research, I will study on another different type of ride-sharing system, called “Bike-sharing system”, and how the bike sharing system effects on the taxi services. The bike sharing system also offer an on-demand transportation service. In the unban areas, bike sharing system could be a potential competitor that rivals taxi business, and in the high-density population area, bike sharing system could able to provide the spatial and temporal accessibility. In the earlier works, Anowar, S., Eluru, N., Miranda-Moreno, L.F. and M. Lee-Gosselin (2015)\citep{anowar2015joint} shows that individual and household social demographic patterns, location and activity behaviors effect the choice of spatial, temporal flexibility and the vehicle type choice and primary driver selection. Therefore, I need to work on the passengers’ behavior to predict the package of choice of their trip before studying on how the bike sharing system effects the taxi service. I will study on the case of bike sharing system called “Divvy” operated in Chicago city. The data set in this paper is download from the divvybikes website. I will study the bike-sharing costumers’ behavior when they decide to ride a bike from a bike-sharing station and examines how bike-sharing effects on the occupancy proportion of taxi service.\\
+    The following paper is organized as three parts. Section 2 describe the detail of dataset will be used in this paper, and data preparation steps. The earlier studies and review are described in the third section. A detail model and analysis are described in section 4, and section 5 concludes the 
+    paper.
+    
+    \section{Data}
+    The dataset in this paper about bike-sharing system is called “Divvy” in Chicago city, which operated 2013 and started with 75 stations. In 2015, there was a quick expansion. The total number of stations increased to more than 400. The divvy dataset is published quarterly on their owned official website, also are open data. In this dataset, it records historical trips and the bike station information. In the dataset, there is a unique ID to indicate each trip. For each trip record, it includes the start time and station location as well as the end time and location of returning station. Also, it includes the trip duration, trip distance and the type of passengers shown as “subscriber” and “customer”. For the subscriber’s trip, it also records the gender and age phase of passengers. Under the station information dataset, it includes the indicating ID, the capacities of the station for bike docks, the name of the located street and also the specific location, which represented as a coordinate pair including latitude and longitude. \\
+	The taxi dataset used in this paper can be found from the Chicago Data Portal website, and the dataset was recorded since 2013. In the dataset, it includes the complete historical trip records, and it has a unique ID for each individual trip. It also records the start time and the end time as well as the corresponding origin and destination location, which shown as a latitude, longitude pair for each trip. It also includes the trip distance, duration and the fare.\\
+	In the following paper, I will study on those data to study on the choice of passengers of bike sharing system and their traveling behavior in the urban cores. Furthermore, I will analyze the relationship between the bike sharing system and taxi business based on the results.
+	
+	\section{Literature Review}
+    Taxi business have been prevalent for a long time, but BSS is an emerging transportation system. There are several earlier works and research efforts have examined these two systems independently, and there are several earlier researches focus on relation between different type sharing-transportation system and taxicab.\\
+    Many researches study on the same type ride-sharing system vs taxi, such as for hired vehicle (Uber, Lyft). Since taxi and for hired vehicle system are vehicle and both have similar origin and destination pair regulation, both types of transportation form are very close to each other. Scott Wallsten (June 2015)\citep{wallsten2015competitive} examines that the incumbent (Taxi) do response to the competition to keep the customers. The taxi services respond to the emerging ride-sharing system competition by improving quality. The consumers will be better off, if the incumbents are forced to respond to the competition. The entre of ride-sharing system help to decrease the consumer complaints about taxi business. \\
+    Judd Cramer and Alan B. Krueger (March 2016)\citep{cramer2016disruptive} examines the efficiency between for hired vehicle system and traditional taxi business by comparing the capacity utilization rate. They showed that based on the modern internet mobile technology, ride-sharing system have more efficiency matching technology to connect the consumers and drivers. Also, the reveals the traditional taxi business system have inefficient regulations comparing with ride-sharing system, and for hired vehicle’s flexible labor supply and pricing scheme are more effective to match with demand. For my research topic, bike-sharing also have the internet mobile-based technology, which has more common characterize with for-hired vehicle system. \\
+    In the previous study , “Why you can’t find a taxi in the rain and other labor supply lessons from cab drivers”, Henry S. F. shows that earning loss utility and income reference dependence does not effects on the daily labor supply decisions of drivers efficiently. Also, the earlier paper shows that the reason why people can’t find a taxi during the raining day because of that when drivers met their profit target, the driver will quite the work of that day, which results a decreasing of supply ( Camerer, Babcock, Loewenstein , and Thaler, 1997).\citep{camerer1997labor} Those paper indicate that the weather is an important factor to influence both drivers and passengers.\\
+    Earlier studies examined the distribution of the BSS trip. J. Zhang, X. Pan, M. Li and Philip S. Yu (2016)\citep{zhang2016bicycle} shows that for BSS, the distribution of usage rely on the distribution of stations’ location. Across the urban city, the bike usage can be skewed and inefficient depends on the different places.\\
+    From my review, there are vast studies that examine the different perspectives of bike-sharing and taxicab system separately except the paper “Hail a Cab or Ride a Bike? A Travel Time Comparison of Taxi and Bicycle-Sharing Systems in New York City” by Ahmadreza Faghih-Imani (March, 2017)\citep{faghih2017hail}, which is closest paper to my study. In this research, the trip’s distance less than 3km during weekday, BSS is efficiency for travel by comparing the time consuming, and the average speed, and shows that taxi trips are possible considered to be substituted by bike-sharing trips if the bike stations are near to the trip’s origin and destination pair. \\
+    For my research, I study on the prediction of the behavior of the passenger of bike sharing first to help understand the relationship between taxi service and bike sharing system through the spatial and temporal accessibility.
+
+
+\pagebreak{}
+\bibliographystyle{plain}
+\bibliography{PS11_Yang.bib}
+
+\end{document}
